@@ -26,15 +26,17 @@ To enforce this we use [`pre-commit`](https://pre-commit.com/) to run [`black`](
 
 ```bash
 $ pip install -r requirements.txt
-```
 
-And then install the `pre-commit` hooks with:
-```bash
+# And then install the `pre-commit` hooks with:
+
 $ pre-commit install
 
+# output:
 pre-commit installed at .git/hooks/pre-commit
-
 ```
+
+Or you could just run `make dev-install` to install the dependencies and the hooks!
+
 
 If you are not familiar with the concept of [git hooks](https://git-scm.com/docs/githooks) and/or [`pre-commit`](https://pre-commit.com/) please read the documentation to understand how they work.
 
@@ -96,7 +98,7 @@ fix end of files.........................................................Passed
 
 Now your file has been committed and you can push your changes.
 
-At the beggining this might seem like a tedious process (having to add the file again after `black` and `ruff` have modified it) but it is actually very useful. It allows you to see what changes `black` and `ruff` have made to your files and make sure that they are correct before you commit them.
+At the beginning this might seem like a tedious process (having to add the file again after `black` and `ruff` have modified it) but it is actually very useful. It allows you to see what changes `black` and `ruff` have made to your files and make sure that they are correct before you commit them.
 
 
 
